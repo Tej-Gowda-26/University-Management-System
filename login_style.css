@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #c9d6ff;
+    --secondary-color: #e2e2e2;
+    --text-color: #333;
+    --hover-color: #b1c4ff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+}
+
+.alert-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 0px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#logoutMessage {
+    background-color: #4CAF50 !important; 
+}
+
+#errorMessage {
+    background-color: #f44336; 
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 60px;
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    border: 1px solid #c9d6ff;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #4c6f98;
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #4c6f98;
+    margin: 15px 0;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+#role-label {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+label {
+    color: #4c6f98;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c9d6ff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f7f9ff;
+}
+
+select {
+    appearance: none;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #c9d6ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a1b8ff;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(169, 200, 255, 0.6);
+}
+
+#login-fields {
+    margin-top: 25px;
+}
+
+.password-container {
+    position: relative;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #4c6f98;
+}
+
+#togglePassword:hover {
+    color: #a1b8ff;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
