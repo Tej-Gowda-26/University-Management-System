@@ -26,7 +26,7 @@ A web application for managing student, faculty, and administrative operations. 
 - Manage fee records
 - Manage user roles and access
 
-## 🛠 Technologies Used
+## Technologies Used
 - **Frontend:** HTML5, CSS3, JavaScript
 - **Backend:** PHP
 - **Database:** MySQL
