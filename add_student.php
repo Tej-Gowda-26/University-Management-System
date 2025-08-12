@@ -1,4 +1,12 @@
 <?php
+
+session_start();
+
+if ($_SESSION['role'] !== 'staff') {
+    echo json_encode(["success" => false, "message" => "Unauthorized access."]);
+    exit();
+}
+
 // Database connection
 $servername = "localhost";
 $username = "root";
