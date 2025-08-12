@@ -10,19 +10,16 @@ if ($_SESSION['role'] !== 'staff') {
 }
 
 try {
-    // Database connection using PDO
+    // Database connection
     $host = "localhost";
     $dbname = "UniversityManagementSystem";
-    $username = "root"; // Replace with your actual username
-    $password = ""; // Replace with your actual password
+    $username = "root"; 
+    $password = ""; 
 
-    // Create a PDO instance to connect to the database
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
     
-    // Set the PDO error mode to exception
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // Check if the form is submitted via POST request
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         // Collect form data
