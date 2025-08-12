@@ -1,7 +1,10 @@
 <?php
-// Enable error reporting for debugging purposes
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+session_start();
+
+if ($_SESSION['role'] !== 'staff') {
+    echo json_encode(["success" => false, "message" => "Unauthorized access."]);
+    exit();
+}
 
 // Database connection
 $servername = "localhost";
