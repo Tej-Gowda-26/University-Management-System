@@ -24,7 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     $course_code = trim($_POST['course_code']);
 
-    // Sanitize and validate other inputs
     $student_roll_number = $_POST['student_roll_number'] ?? '';
     $term_test_1_max = $_POST['term_test_1_max'] ?? 0;
     $term_test_1_obtained = $_POST['term_test_1_obtained'] ?? 0;
